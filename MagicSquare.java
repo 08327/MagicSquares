@@ -41,7 +41,8 @@ public class MagicSquare {
      * and diagonal should add-up to.
      */
     private int getConstant() {
-        int constant = ((square.length ^ 2) * (square.length ^ 2 + 1) / 2) / square.length;
+        int num = square.length * square.length;
+        int constant = (num * (num + 1) / 2) / square.length;
         return constant;
     }
 
